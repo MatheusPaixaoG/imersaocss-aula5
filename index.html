@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matheus Paixão</title>
+  <link rel="stylesheet" href="CSS/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Jost&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fcfbd13f18.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="scroll">
+    <header id="home">
+      <div class="abrir_menu" onclick="abrir_menu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="fechar_menu" onclick="fechar_menu()"></div>
+      <div class="menu_aberto">
+        <ul class="container">
+          <li><a href="#home" onclick="fechar_menu()">Home</a></li>
+          <li><a href="#sobre" onclick="fechar_menu()">Sobre</a></li>
+          <li><a href="#portfolio" onclick="fechar_menu()">Portfólio</a></li>
+          <li><a href="#contato" onclick="fechar_menu()">Contato</a></li>
+        </ul>
+      </div>
+      <nav class="menu">
+        <ul class="container">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="titulo">
+        <h1 class="site-title">Matheus Paixão</h1>
+        <h2 class="site-subtitle">Estudante</h2>
+        <h2 class="site-subtitle">Curso ImersãoCSS</h2>
+      </div>
+    </header>
+    <div class="div-portfolio-contato">
+      <section class="sobre container" id="sobre">
+        <h2>Sobre</h2>
+
+        <figure class="imagem-rosto">
+          <img src="./img/foto-site-pessoal-cortada05.jpg" alt="">
+        </figure>
+        <div class="div-sobre">
+          <p>
+            Olá, meu nome é Matheus!
+          </p>
+          <p>
+            Terminei o ensino médio ano passado e estou cursando o primeiro período em Ciências da Computação. Sempre
+            gostei de mexer no computador, mas, no início, pensei em cursar física na faculdade. Depois de pensar
+            bastante, inclusive com ajuda externa, decidi tentar o ENEM para computação mesmo, e passei. Porém, com a
+            pandemia do momento, tive apenas poucos dias de aula e estou usando o tempo para fazer alguns cursos, como
+            os da Alura, para conseguir aprender algumas habilidades que prodem ser úteis, além de jogar no computador e
+            aprender outras coisas.
+          </p>
+          <p>
+            Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">ImersãoCSS da Alura</a> ;)
+          </p>
+        </div>
+      </section>
+      <section class="portfolio container" id="portfolio">
+        <h2>Projetos</h2>
+        <div class="grid">
+
+          <div class="flip-card">
+            <div class="card">
+              <a href="https://tr369.github.io/imersaocss-aula4-Star-Wars/" target="_blank">
+                <figure class="card-front">
+                  <img class="img-portfolio img-sw" src="./img/print-site-SW.jpg"
+                    alt="imagem de um site igual à abertura de Star Wars">
+                  <figcaption>Site Star Wars</figcaption>
+                </figure>
+              </a>
+              <!--<div class="card-back">
+                Oi, eu sou a parte de trás :)
+              </div>-->
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <a href="https://codepen.io/MatheusPGS/pen/ExVKBVb" target="_blank">
+                <figure class="card-front">
+                  <img class="img-portfolio" src="./img/print-certificado-quarentenadev.jpg"
+                    alt="Gerador de certificados criado durante a QuarentenaDev da Alura">
+                  <figcaption>Certificado da QuarentenaDev</figcaption>
+                </figure>
+              </a>
+              <!--<div class="card-back">
+                Oi, eu sou a parte de trás :)
+              </div>-->
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <a href="https://codepen.io/MatheusPGS/pen/jObqyJa" target="_blank">
+                <figure class="card-front">
+                  <img class="img-portfolio" src="./img/print-ficha-cadastral.jpg"
+                    alt="Exemplo de ficha cadastral de academia, com o nome, a data de nascimento, a idade, a existência de alguma condição pré-existente ou não e o IMC">
+                  <figcaption>Exemplo de ficha cadastral de academia</figcaption>
+                </figure>
+              </a>
+              <!--<div class="card-back">
+                Oi, eu sou a parte de trás :)
+              </div>-->
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <a href="https://codepen.io/MatheusPGS/pen/bGVpqqa" target="_blank">
+                <figure class="card-front">
+                  <img class="img-portfolio" src="./img/print-app-uber.jpg"
+                    alt="Modelo de aplicativo para calcular o custo de uma corrida de Uber">
+                  <figcaption>Exemplo de aplicativo estilo Uber</figcaption>
+                </figure>
+              </a>
+              <!--<div class="card-back">
+                Oi, eu sou a parte de trás :)
+              </div>-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contato container" id="contato">
+        <h2>Contato</h2>
+        <div class="grid-icons">
+          <a target="_blank" href="https://github.com/TR369">
+            <i class="fab fa-github-square"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/matheus.paixao.1804/">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/matheus-paixao-1589b41a6/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/matheus.paixao.1804/">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>
